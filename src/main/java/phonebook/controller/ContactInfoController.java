@@ -16,7 +16,6 @@ import phonebook.service.ContactService;
 @Controller
 public class ContactInfoController {
 
-
 	@Autowired
 	private ContactService service;
 	
