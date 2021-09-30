@@ -31,7 +31,7 @@ public class ContactInfoController {
 		boolean isSaved=service.saveContact(contact);
 		if(isSaved) {
 			//model.addAttribute("success", "contact saved successfully");
-			//return "redirect:/viewContacts";
+			//return "redirect:/viewContacts";vgfdf
 			attributes.addFlashAttribute("success", "contact saved successfully");
 			
 		}else {
@@ -40,6 +40,8 @@ public class ContactInfoController {
 		}
 		return "redirect:/addContact";
 	}
+
+
 	
 	@GetMapping(value="/viewContacts")
 	public String handleViewContactList(Model model) {
